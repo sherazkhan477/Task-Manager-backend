@@ -120,6 +120,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Add this to collect static files in a single directory
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Optionally, if you have custom static directories (e.g. for custom CSS)
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
